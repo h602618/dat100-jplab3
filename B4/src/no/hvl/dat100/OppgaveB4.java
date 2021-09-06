@@ -1,3 +1,5 @@
+package no.hvl.dat100;
+
 import static javax.swing.JOptionPane.*;
 
 public class OppgaveB4 {
@@ -11,13 +13,13 @@ public class OppgaveB4 {
         int brutto = Integer.parseInt(showInputDialog("Brutto"));
 
         double tSats = 0.00;
-        if (brutto >= 1021550) {
+        if (brutto > 1021550) {
             tSats = 16.2;
-        } else if (brutto > 651250 && brutto < 1021550) {
+        } else if (brutto >= 651250 && brutto <= 1021550) {
             tSats = 13.2;
-        } else if (brutto > 260100 && brutto < 651250) {
+        } else if (brutto >= 260100 && brutto <= 651250) {
             tSats = 4.0;
-        } else if (brutto > 184800 && brutto < 260100) {
+        } else if (brutto > 184800 && brutto <= 260100) {
             tSats = 1.7;
         }
         // else ikke nødvendig
@@ -29,6 +31,6 @@ public class OppgaveB4 {
         // antall kroner i skatt
         double tSkatt = brutto * tSats;
 
-        System.out.println("Trinnskatt=" + tSkatt + "kr");
+        showMessageDialog(null, "Trinnskatt=" + tSkatt + "kr");
     }
 }

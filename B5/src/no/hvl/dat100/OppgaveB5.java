@@ -1,3 +1,5 @@
+package no.hvl.dat100;
+
 import static javax.swing.JOptionPane.*;
 
 public class OppgaveB5 {
@@ -25,7 +27,7 @@ public class OppgaveB5 {
                 karakter = 'A';
             }
 
-            System.out.println("Karakter(" + i + "): " + karakter);
+            showMessageDialog(null, "Karakter(" + i + "): " + karakter);
         }
     }
 }
