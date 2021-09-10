@@ -4,7 +4,7 @@ import static javax.swing.JOptionPane.*;
 
 public class OppgaveB5 {
     public static void main(String[] args) {
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 10; i++) {
             int poeng = 0;
             do {
                 poeng = Integer.parseInt(showInputDialog("Poengsum(" + i + ")"));
